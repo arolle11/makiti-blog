@@ -17,7 +17,7 @@ Build a simple blog viewer using React that allows:
 
 ## 🚀 Live Demo
 
-🔗 [View Live App](https://your-deployment-url.com)
+🔗 [View Live App](https://makiti-blog.netlify.app/)
 
 ---
 

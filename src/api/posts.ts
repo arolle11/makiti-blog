@@ -1,8 +1,9 @@
 import axios from "axios";
 import type { Post } from "../types/types";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-const POSTS_API = import.meta.env.VITE_POSTS_API;
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "https://dummyjson.com";
+const POSTS_API = import.meta.env.VITE_POSTS_API || "/posts";
 const API_URL = `${API_BASE_URL}${POSTS_API}`;
 
 export const fetchPosts = async (

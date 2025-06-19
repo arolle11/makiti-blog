@@ -1,8 +1,9 @@
 import axios from "axios";
 import type { User } from "../types/types";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-const USERS_API = import.meta.env.VITE_USERS_API;
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "https://dummyjson.com";
+const USERS_API = import.meta.env.VITE_USERS_API || "/users";
 const API_URL = `${API_BASE_URL}${USERS_API}`;
 
 export const fetchAllUsers = async (): Promise<User[]> => {
