@@ -10,7 +10,6 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["jest", "@testing-library/jest-dom"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",

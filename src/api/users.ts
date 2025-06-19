@@ -1,13 +1,5 @@
 import axios from "axios";
-
-export interface User {
-  id: number;
-  firstName: string;
-  lastName: string;
-  maidenName: string;
-  age: number;
-  gender: string;
-}
+import type { User } from "../types/types";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const USERS_API = import.meta.env.VITE_USERS_API;

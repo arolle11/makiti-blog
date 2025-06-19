@@ -31,26 +31,12 @@ Build a simple blog viewer using React that allows:
 
 ---
 
-## 📂 Folder Structure
-
-/makiti-blog-viewer
-├── public/
-├── src/
-│ ├── components/ # Reusable components
-│ ├── pages/ # Post list and post detail views
-├ ├── types/ # Interfaces
-│ ├── assets/ # Static assets
-│ ├── App.tsx
-│ └── main.tsx
-├── index.html
-├── package.json
-
 ## 🚀 Installation
 
 1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/arolle11/images-gallery
+   git clone https://github.com/arolle11/makiti-blog.git
    ```
 
 2. Installez les dépendances :

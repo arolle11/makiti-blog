@@ -4,8 +4,8 @@ import { fetchPosts, fetchAllPosts } from "../api/posts";
 import { fetchAllUsers } from "../api/users";
 import CardPost from "../components/CardPost";
 import LoadingSpinner from "../components/LoadingSpinner";
-import type { Post } from "../api/posts";
-import type { User } from "../api/users";
+import type { Post } from "../types/types";
+import type { User } from "../types/types";
 
 const ITEMS_PER_PAGE = 6;
 

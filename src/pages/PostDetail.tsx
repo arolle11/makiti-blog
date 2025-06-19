@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { fetchPostById } from "../api/posts";
 import { fetchUserById } from "../api/users";
-import type { Post } from "../api/posts";
-import type { User } from "../api/users";
+import type { Post } from "../types/types";
+import type { User } from "../types/types";
 import image from "../assets/image.png";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
 import LoadingSpinner from "../components/LoadingSpinner";
@@ -21,8 +21,6 @@ const PostDetail = () => {
       try {
         setLoading(true);
         const postData = await fetchPostById(Number(id));
-
-        // Fetch user data
         let userData: User | undefined;
         try {
           userData = await fetchUserById(postData.userId);
@@ -35,7 +33,6 @@ const PostDetail = () => {
           };
         }
 
-        // Check local storage for likes/dislikes
         const likedPosts = JSON.parse(
           localStorage.getItem("likedPosts") || "{}"
         );

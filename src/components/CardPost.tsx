@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import type { Post } from "../api/posts";
+import type { Post } from "../types/types";
 import image from "../assets/image.png";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
 import { useState, useEffect } from "react";

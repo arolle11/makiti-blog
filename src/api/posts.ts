@@ -1,23 +1,5 @@
 import axios from "axios";
-
-interface Reaction {
-  likes: number;
-  dislikes: number;
-}
-
-interface Post {
-  id: number;
-  title: string;
-  body: string;
-  tags: string[];
-  reactions: Reaction;
-  views: number;
-  userId: number;
-  user: {
-    firstName: string;
-    lastName: string;
-  };
-}
+import type { Post } from "../types/types";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const POSTS_API = import.meta.env.VITE_POSTS_API;
@@ -74,4 +56,3 @@ export const fetchAllPosts = async (): Promise<{
     throw error;
   }
 };
-export type { Post, Reaction };
