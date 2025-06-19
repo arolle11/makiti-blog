@@ -33,20 +33,20 @@ Build a simple blog viewer using React that allows:
 
 ## 🚀 Installation
 
-1. Clonez le dépôt :
+1. Clone this repository :
 
    ```bash
    git clone https://github.com/arolle11/makiti-blog.git
    ```
 
-2. Installez les dépendances :
+2. Navigate to the project directory and install dependencies :
 
    ```bash
    cd makiti-blog
    npm install
    ```
 
-3. Lancez l'application :
+3. Start the development servern :
 
    ```bash
    npm run dev
